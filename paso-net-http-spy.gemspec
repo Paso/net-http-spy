@@ -31,15 +31,13 @@ Gem::Specification.new do |s|
   s.summary = "Ever wondered what HTTP requests the Ruby gem you are using to connect to a third party API is making? Use HTTP Spy to see what is going on behind the scenes."
 
   if s.respond_to? :specification_version then
+    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
-    if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
-      s.add_runtime_dependency(%q<paso-net-http-spy>, [">= 0"])
+    if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
     else
-      s.add_dependency(%q<paso-net-http-spy>, [">= 0"])
     end
   else
-    s.add_dependency(%q<paso-net-http-spy>, [">= 0"])
   end
 end
 
