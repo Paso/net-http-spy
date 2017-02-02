@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "paso-net-http-spy"
-  s.version = "0.2.1-p1"
+  s.version = "0.2.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Martin Sadler", "Patrik Soderberg"]
-  s.date = "2012-09-11"
+  s.date = "2017-02-02"
   s.description = "Ever wondered what HTTP requests the Ruby gem you are using to connect to a third party API is making? Use HTTP Spy to see what is going on behind the scenes."
   s.email = "patrik@booli.se"
   s.extra_rdoc_files = [
